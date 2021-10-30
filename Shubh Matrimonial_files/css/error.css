@@ -1,0 +1,22 @@
+.errmsg{
+    float: right;
+    margin: auto;
+    margin-right: 183px;
+    position: relative;
+    top: -42px;
+}
+span.error {
+          font: bold 11px Arial, sans-serif;
+          color:#CC0309;
+          display: none;
+          height: 28px;
+          width: 180px;
+          padding: 5px 15px 10px 20px;
+          line-height: 1em;
+          float: right;
+          vertical-align: middle;
+          position: absolute;
+}
+span.error::first-of-type{
+  top: 10px;
+}

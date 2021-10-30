@@ -1,0 +1,153 @@
+
+#focusedInput {
+	border-color: rgba(82, 168, 236, .8);
+	outline: 0;
+	outline: thin dotted \9;
+	/* IE6-9 */
+	-moz-box-shadow: 0 0 8px rgba(82, 168, 236, .6);
+	box-shadow: 0 0 8px rgba(82, 168, 236, .6);
+}
+
+
+/* Better spacing on download options in getting started */
+
+.bs-docs-dl-options h4 {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+;
+.ih-item {
+	position: relative;
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+
+.ih-item,
+.ih-item * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ih-item a {
+	color: #333;
+}
+
+.ih-item a:hover {
+	text-decoration: none;
+}
+
+.ih-item img {
+	width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.ih-item.square {
+	position: relative;
+    width: 100%;
+    height: 290px;
+    /* border: 8px solid #fff; */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+   margin-bottom: 20px;
+}
+
+.ih-item.square .info {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+
+.ih-item.square.effect1 {
+	overflow: hidden;
+}
+
+.ih-item.square.effect1.colored .info {
+	background: #1a4a72;
+}
+
+.ih-item.square.effect1 .img {
+	z-index: 11;
+	position: absolute;
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+    top: -10px;
+}
+
+.ih-item.square.effect1 .info {
+	background: #fdf6f6;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect1  .info {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.ih-item.square.effect1.bottom_to_top .info h3 {
+	text-transform: capitalize;
+    color: #040001;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 10px 0 4px;
+    margin: 200px 0 0 0;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.ih-item.square.effect1.bottom_to_top .info p {
+	
+	font-size: 13px;
+	color: #727171;
+	padding: 5px;
+	text-align: center;
+}
+
+.ih-item.square.effect1.bottom_to_top .img {
+	-webkit-transform: translateY(-30px) scale(0.6);
+	-moz-transform: translateY(-30px) scale(0.6);
+	-ms-transform: translateY(-30px) scale(0.6);
+	-o-transform: translateY(-30px) scale(0.6);
+	transform: translateY(-30px) scale(0.6);
+}
+.ih-item.square.effect1.bottom_to_top .img:hover {
+    z-index: 11;
+	position: absolute;
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+    top: -10px;
+}
