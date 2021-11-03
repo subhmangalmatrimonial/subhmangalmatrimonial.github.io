@@ -775,3 +775,42 @@ new WOW().init();
 /* Date picker
 ============================================== */
 $('.datepicker').datepicker();
+
+
+const endpointUrl = "https://subhmangal-api.glitch.me/send"
+function sendMail() {
+
+  var name = $("#input_4_1").val();
+  var mobile = $("#input_4_2").val();
+
+  if(name.trim()=="") {
+    alert("Name should be required!");
+    return
+  }
+  if(mobile.trim()=="") {
+    alert("Mobile Number should be required!")
+    return;
+  }
+  $("#btnlogin1").val("Please wait...")
+//   $("#btnlogin1").
+  var data = {
+    name: name,
+    mobile: mobile
+  }
+  $.ajax({
+    url: endpointUrl,
+    type: 'POST',
+    contentType: 'application/json',
+    data: JSON.stringify(data),
+    success: function (result) {
+        console.log(result)
+        $("#btnlogin1").val("Submit")
+        alert("We receive your request successfully!")
+    },
+    error: function (e) {
+        $("#btnlogin1").val("Submit")
+        console.log(e)
+        alert("Something went wrong try after some time!")
+    }
+  });
+}
